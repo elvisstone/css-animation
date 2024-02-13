@@ -16,19 +16,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
 .dot{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: white;
     border-radius: 50%;
 }
 
 .big-dot{
-    width: 250px;
-    height: 250px;    
+    width: 200px;
+    height: 200px;    
 }
 
 .left-dot{
@@ -36,30 +35,30 @@ body{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: cubic-bezier(0.51,-1.27, 0.61, 2.82);;
+    animation-timing-function: ease-in;
 }
 .right-dot{
     animation-name: right-dot;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: cubic-bezier(0.51,-1.27, 0.61, 2.82);
+    animation-timing-function: ease-in;
 }
 
 @keyframes left-dot {
     from{
-        transform: translateX(0%);
+        transform: translateX(200px);
     }
     to{
-        transform: translateX(150%);
+        transform: translateX(-90px);
     }
 }
 
 @keyframes right-dot {
     from{
-        transform: translateX(0%);
+        transform: translateX(-200px);
     }
     to{
-        transform: translateX(-150%);
+        transform: translateX(90px);
     }
 }
