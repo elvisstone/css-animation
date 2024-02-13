@@ -32,14 +32,14 @@ body{
 
 .left-dot{
     animation-name: left-dot;
-    animation-duration: 2s;
+    animation-duration: 1.2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
 }
 .right-dot{
     animation-name: right-dot;
-    animation-duration: 2s;
+    animation-duration: 1.2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
@@ -47,7 +47,8 @@ body{
 
 @keyframes left-dot {
     from{
-        transform: translateX(200px);
+        transform: translateX(200px) scale(0.6);
+        
     }
     to{
         transform: translateX(-90px);
@@ -56,7 +57,7 @@ body{
 
 @keyframes right-dot {
     from{
-        transform: translateX(-200px);
+        transform: translateX(-200px) scale(0.6);
     }
     to{
         transform: translateX(90px);
